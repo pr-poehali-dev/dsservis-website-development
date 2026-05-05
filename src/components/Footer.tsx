@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
+import BookingModal from '@/components/BookingModal';
 
 export default function Footer() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <footer className="bg-[#04080f] border-t border-blue-900/30 mt-20">
+      <BookingModal forceOpen={modalOpen} onClose={() => setModalOpen(false)} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -70,9 +75,20 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-white text-sm font-500 tracking-widest uppercase mb-4">Контакты</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2.5 text-gray-400 text-sm font-body">
+              <li className="flex items-start gap-2.5 text-sm font-body">
                 <Icon name="Phone" size={15} className="text-blue-400 mt-0.5 flex-shrink-0" />
-                <span>8 (800) 123-45-67<br/><span className="text-xs text-gray-500">Бесплатно по России</span></span>
+                <button
+                  onClick={() => setModalOpen(true)}
+                  className="text-left group"
+                >
+                  <span className="text-blue-400 hover:text-blue-300 transition-colors underline underline-offset-2 decoration-dotted">
+                    8 (800) 123-45-67
+                  </span>
+                  <br />
+                  <span className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+                    Нажмите — запишитесь онлайн
+                  </span>
+                </button>
               </li>
               <li className="flex items-start gap-2.5 text-gray-400 text-sm font-body">
                 <Icon name="Mail" size={15} className="text-blue-400 mt-0.5 flex-shrink-0" />
