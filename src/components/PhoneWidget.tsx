@@ -36,11 +36,11 @@ export default function PhoneWidget() {
               Узнайте все детали по телефону
             </p>
             <a
-              href="tel:+78001234567"
+              href="tel:+79190072169"
               className="btn-primary-ds px-3 py-1.5 rounded-lg text-xs inline-flex items-center gap-1.5 tracking-wider"
             >
               <Icon name="Phone" size={12} />
-              8 (800) 123-45-67
+              +7 (919) 007-21-69
             </a>
           </div>
         </div>

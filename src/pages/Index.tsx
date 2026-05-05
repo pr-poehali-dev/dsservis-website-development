@@ -115,7 +115,7 @@ export default function Index() {
                 Записаться онлайн
               </button>
               <a
-                href="tel:+78001234567"
+                href="tel:+79190072169"
                 className="flex items-center gap-2 border border-blue-500/40 text-white hover:border-blue-400 hover:text-blue-400 px-8 py-4 rounded-xl text-sm font-display tracking-wider uppercase transition-all duration-300"
               >
                 <Icon name="Phone" size={18} />
@@ -297,11 +297,11 @@ export default function Index() {
                 Записаться онлайн
               </button>
               <a
-                href="tel:+78001234567"
+                href="tel:+79190072169"
                 className="flex items-center gap-2 border border-blue-500/40 text-white hover:border-blue-400 px-8 py-4 rounded-xl text-sm font-display tracking-wider uppercase transition-all duration-300"
               >
                 <Icon name="Phone" size={16} />
-                8 (800) 123-45-67
+                +7 (919) 007-21-69
               </a>
             </div>
           </div>

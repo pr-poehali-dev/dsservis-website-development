@@ -82,7 +82,7 @@ export default function Footer() {
                   className="text-left group"
                 >
                   <span className="text-blue-400 hover:text-blue-300 transition-colors underline underline-offset-2 decoration-dotted">
-                    8 (800) 123-45-67
+                    +7 (919) 007-21-69
                   </span>
                   <br />
                   <span className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
