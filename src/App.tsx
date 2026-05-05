@@ -1,10 +1,14 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import ServiceTO from "./pages/ServiceTO";
+import ServiceDoosnashenie from "./pages/ServiceDoosnashenie";
+import ServiceOsago from "./pages/ServiceOsago";
+import ServiceZapchasti from "./pages/ServiceZapchasti";
+import ServiceSignalizatsiya from "./pages/ServiceSignalizatsiya";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -17,6 +21,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/to" element={<ServiceTO />} />
+          <Route path="/doosnashenie" element={<ServiceDoosnashenie />} />
+          <Route path="/osago" element={<ServiceOsago />} />
+          <Route path="/zapchasti" element={<ServiceZapchasti />} />
+          <Route path="/signalizatsiya" element={<ServiceSignalizatsiya />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
